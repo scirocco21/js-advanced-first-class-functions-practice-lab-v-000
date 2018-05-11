@@ -25,3 +25,8 @@ function driversByName(drivers) {
     return (a.name).localeCompare(b.name);
   })
 }
+
+function totalRevenue(drivers) {
+  drivers.reduce(function(accumulator, currentValue, currentIndex, array) {
+    return accumulator + currentValue;
+  })
