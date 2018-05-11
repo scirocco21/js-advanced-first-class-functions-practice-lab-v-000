@@ -27,6 +27,6 @@ function driversByName(drivers) {
 }
 
 function totalRevenue(drivers) {
-  drivers.reduce(function(accumulator, currentValue, currentIndex, array) {
+  drivers.filter(function(driver){driver.revenue).reduce(function(accumulator, currentValue, currentIndex, array) {
     return accumulator + currentValue;
   })
