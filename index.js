@@ -18,4 +18,5 @@ function driversByRevenue(drivers) {
   sortedDrivers.sort(function(a, b) {
     return a.revenue - b.revenue;
   })
+  return sortedDrivers;
 }
