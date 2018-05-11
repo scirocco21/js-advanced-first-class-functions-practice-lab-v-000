@@ -38,7 +38,7 @@ function averageRevenue(drivers) {
   const revenues = [];
   drivers.forEach(function(driver){revenues.push(driver.revenue)})
   return revenues.reduce(function(accumulator, currentValue, currentIndex, array) {
-    return accumulator + currentValue/drivers.length;
-  })
+    return accumulator + currentValue;
+  })drivers.length
 }
 }
