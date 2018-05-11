@@ -27,6 +27,9 @@ function driversByName(drivers) {
 }
 
 function totalRevenue(drivers) {
-  drivers.filter(function(driver){driver.revenue).reduce(function(accumulator, currentValue, currentIndex, array) {
+  const revenues = [];
+  drivers.forEach(function(driver){revenues.push(driver.revenue)})
+  return revenues.reduce(function(accumulator, currentValue, currentIndex, array) {
     return accumulator + currentValue;
   })
+}
