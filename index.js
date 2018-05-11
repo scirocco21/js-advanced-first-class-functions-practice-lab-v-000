@@ -33,3 +33,7 @@ function totalRevenue(drivers) {
     return accumulator + currentValue;
   })
 }
+
+function averageRevenue(drivers) {
+  
+}
